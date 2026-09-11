@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Defender</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-wrap">
+      <div class="hud">
+        <div class="panel">
+          <span>Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="panel">
+          <span>Best</span>
+          <strong id="best">0</strong>
+        </div>
+        <div class="panel">
+          <span>Lives</span>
+          <strong id="lives">3</strong>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="480" height="720" aria-label="Vertical shooting game"></canvas>
+
+      <div class="controls">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

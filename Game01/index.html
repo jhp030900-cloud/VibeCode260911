@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테트리스</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <div class="panel">
+        <h1>TETRIS</h1>
+
+        <div class="stats">
+          <div class="stat-box">
+            <span class="label">Score</span>
+            <span id="score">0</span>
+          </div>
+          <div class="stat-box">
+            <span class="label">Lines</span>
+            <span id="lines">0</span>
+          </div>
+          <div class="stat-box">
+            <span class="label">Level</span>
+            <span id="level">1</span>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="start-btn">Start</button>
+          <button id="pause-btn">Pause</button>
+          <button id="reset-btn">Reset</button>
+        </div>
+
+        <div class="legend">
+          <h2>Controls</h2>
+          <ul>
+            <li>← → : 이동</li>
+            <li>↑ : 회전</li>
+            <li>↓ : 빠르게 내리기</li>
+            <li>Space : 하드 드롭</li>
+            <li>P : 일시정지</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="board-wrap">
+        <canvas id="game" width="300" height="600" aria-label="Tetris board"></canvas>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
